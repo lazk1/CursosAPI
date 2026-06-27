@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using HandlebarsDotNet;
+using System.Text;
 
 namespace Tp_Programacion.Utils
 {
@@ -6,7 +7,7 @@ namespace Tp_Programacion.Utils
     {
         public static string Render(string source, object data)
         {
-            var template = HB.Compile(source);
+            var template = Handlebars.Compile(source);
             var result = template(data);
             return result;
         }

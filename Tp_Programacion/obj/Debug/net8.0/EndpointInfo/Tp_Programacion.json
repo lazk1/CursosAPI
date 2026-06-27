@@ -1,0 +1,11 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Cursos API",
+    "description": "Plataforma de cursos",
+    "termsOfService": "https://www.cursosAPI.com",
+    "version": "v1"
+  },
+  "paths": { },
+  "components": { }
+}

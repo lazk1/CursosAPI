@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\config\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\config\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\utils\\handlebarshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\utils\\handlebarshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\services\\cursosevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,34 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\models\\curso\\dto\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\models\\curso\\dto\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\models\\curso\\dto\\createcursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\models\\curso\\dto\\createcursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\utils\\authoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\utils\\authoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\utils\\handlebarshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\utils\\handlebarshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\utils\\responsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\utils\\responsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\utils\\responsevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\utils\\responsevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\repository\\cursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,20 +39,44 @@
       "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\config\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\config\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\utils\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\utils\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\models\\curso\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\models\\curso\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\models\\curso\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\models\\curso\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\models\\curso\\dto\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\models\\curso\\dto\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\models\\curso\\dto\\createcursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\models\\curso\\dto\\createcursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\utils\\authoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\utils\\authoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\utils\\responsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\utils\\responsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\utils\\responsevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\utils\\responsevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\utils\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|solutionrelative:tp_programacion\\utils\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B81FA9B-6C0D-3541-26E6-11E995E19296}|Tp_Programacion\\Tp_Programacion.csproj|c:\\users\\agustin\\desktop\\tp_programacion\\tp_programacion\\models\\curso\\dto\\cursosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,123 +94,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RoleService.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Services\\RoleService.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Services\\RoleService.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Services\\RoleService.cs",
-              "RelativeToolTip": "Tp_Programacion\\Services\\RoleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Program.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Program.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Program.cs",
+              "RelativeToolTip": "Tp_Programacion\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T13:40:46.939Z",
+              "WhenOpened": "2026-06-27T14:26:42.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\appsettings.json",
+              "RelativeDocumentMoniker": "Tp_Programacion\\appsettings.json",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\appsettings.json",
+              "RelativeToolTip": "Tp_Programacion\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-27T14:27:27.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CursoSevice.cs",
               "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Services\\CursoSevice.cs",
               "RelativeDocumentMoniker": "Tp_Programacion\\Services\\CursoSevice.cs",
               "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Services\\CursoSevice.cs",
               "RelativeToolTip": "Tp_Programacion\\Services\\CursoSevice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAA5wE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-27T13:40:45.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HandlebarsHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\HandlebarsHelper.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Utils\\HandlebarsHelper.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\HandlebarsHelper.cs",
-              "RelativeToolTip": "Tp_Programacion\\Utils\\HandlebarsHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T13:09:53.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ResponseMessage.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ResponseMessage.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Utils\\ResponseMessage.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ResponseMessage.cs",
-              "RelativeToolTip": "Tp_Programacion\\Utils\\ResponseMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T13:08:26.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthOperationFilter.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\AuthOperationFilter.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Utils\\AuthOperationFilter.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\AuthOperationFilter.cs",
-              "RelativeToolTip": "Tp_Programacion\\Utils\\AuthOperationFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T13:10:22.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateCursoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Dto\\CreateCursoDTO.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Models\\Curso\\Dto\\CreateCursoDTO.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Dto\\CreateCursoDTO.cs",
-              "RelativeToolTip": "Tp_Programacion\\Models\\Curso\\Dto\\CreateCursoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T23:03:53.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CursoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Dto\\CursoDTO.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Models\\Curso\\Dto\\CursoDTO.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Dto\\CursoDTO.cs",
-              "RelativeToolTip": "Tp_Programacion\\Models\\Curso\\Dto\\CursoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T23:06:54.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Mapping.cs",
               "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Config\\Mapping.cs",
               "RelativeDocumentMoniker": "Tp_Programacion\\Config\\Mapping.cs",
               "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Config\\Mapping.cs",
               "RelativeToolTip": "Tp_Programacion\\Config\\Mapping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-27T13:19:04.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ResponseValidation.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ResponseValidation.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Utils\\ResponseValidation.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ResponseValidation.cs",
-              "RelativeToolTip": "Tp_Programacion\\Utils\\ResponseValidation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Services\\RoleService.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Services\\RoleService.cs",
+              "RelativeToolTip": "Tp_Programacion\\Services\\RoleService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwFsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T13:08:54.736Z",
+              "WhenOpened": "2026-06-27T13:40:46.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Curso.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Curso.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Models\\Curso\\Curso.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Curso.cs",
+              "RelativeToolTip": "Tp_Programacion\\Models\\Curso\\Curso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T22:59:36.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Config\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Config\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Config\\AppDbContext.cs",
+              "RelativeToolTip": "Tp_Programacion\\Config\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T13:19:05.34Z",
               "EditorCaption": ""
             },
             {
@@ -213,66 +195,14 @@
               "RelativeDocumentMoniker": "Tp_Programacion\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Services\\UserService.cs",
               "RelativeToolTip": "Tp_Programacion\\Services\\UserService.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAuwBwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-27T13:07:01.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Repository\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "Tp_Programacion\\Repository\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T13:01:20.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Config\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Config\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Config\\AppDbContext.cs",
-              "RelativeToolTip": "Tp_Programacion\\Config\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T13:19:05.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ErrorResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ErrorResponse.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Utils\\ErrorResponse.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ErrorResponse.cs",
-              "RelativeToolTip": "Tp_Programacion\\Utils\\ErrorResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T13:07:45.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ROLES.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Enums\\ROLES.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Enums\\ROLES.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Enums\\ROLES.cs",
-              "RelativeToolTip": "Tp_Programacion\\Enums\\ROLES.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T13:18:23.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "CursoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Repository\\CursoRepository.cs",
               "RelativeDocumentMoniker": "Tp_Programacion\\Repository\\CursoRepository.cs",
@@ -285,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "Tp_Programacion\\Repository\\Repository.cs",
@@ -298,20 +228,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Curso.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Curso.cs",
-              "RelativeDocumentMoniker": "Tp_Programacion\\Models\\Curso\\Curso.cs",
-              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Curso.cs",
-              "RelativeToolTip": "Tp_Programacion\\Models\\Curso\\Curso.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Tp_Programacion\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T22:59:36.922Z",
+              "WhenOpened": "2026-06-27T13:01:20.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HandlebarsHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\HandlebarsHelper.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Utils\\HandlebarsHelper.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\HandlebarsHelper.cs",
+              "RelativeToolTip": "Tp_Programacion\\Utils\\HandlebarsHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T13:09:53.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ROLES.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Enums\\ROLES.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Enums\\ROLES.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Enums\\ROLES.cs",
+              "RelativeToolTip": "Tp_Programacion\\Enums\\ROLES.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T13:18:23.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "ResponseValidation.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ResponseValidation.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Utils\\ResponseValidation.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ResponseValidation.cs",
+              "RelativeToolTip": "Tp_Programacion\\Utils\\ResponseValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T13:08:54.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CursoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Dto\\CursoDTO.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Models\\Curso\\Dto\\CursoDTO.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Dto\\CursoDTO.cs",
+              "RelativeToolTip": "Tp_Programacion\\Models\\Curso\\Dto\\CursoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T23:06:54.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateCursoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Dto\\CreateCursoDTO.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Models\\Curso\\Dto\\CreateCursoDTO.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Dto\\CreateCursoDTO.cs",
+              "RelativeToolTip": "Tp_Programacion\\Models\\Curso\\Dto\\CreateCursoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T23:03:53.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthOperationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\AuthOperationFilter.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Utils\\AuthOperationFilter.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\AuthOperationFilter.cs",
+              "RelativeToolTip": "Tp_Programacion\\Utils\\AuthOperationFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T13:10:22.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ResponseMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ResponseMessage.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Utils\\ResponseMessage.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ResponseMessage.cs",
+              "RelativeToolTip": "Tp_Programacion\\Utils\\ResponseMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T13:08:26.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ErrorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ErrorResponse.cs",
+              "RelativeDocumentMoniker": "Tp_Programacion\\Utils\\ErrorResponse.cs",
+              "ToolTip": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Utils\\ErrorResponse.cs",
+              "RelativeToolTip": "Tp_Programacion\\Utils\\ErrorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T13:07:45.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "CursosDTO.cs",
               "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Dto\\CursosDTO.cs",
               "RelativeDocumentMoniker": "Tp_Programacion\\Models\\Curso\\Dto\\CursosDTO.cs",
@@ -324,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "UpdateCursoDTO.cs",
               "DocumentMoniker": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Models\\Curso\\Dto\\UpdateCursoDTO.cs",
               "RelativeDocumentMoniker": "Tp_Programacion\\Models\\Curso\\Dto\\UpdateCursoDTO.cs",

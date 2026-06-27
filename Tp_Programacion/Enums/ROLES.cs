@@ -3,7 +3,7 @@
     public static class ROLES
     {
         public const string Admin = "Admin";
-        public const string User = "User";
-        public const string Mod = "Mod";
+        public const string User = "UserPremium";
+        public const string Mod = "UserGratis";
     }
 }

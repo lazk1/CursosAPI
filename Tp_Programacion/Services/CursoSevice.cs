@@ -4,93 +4,76 @@ using Tp_Programacion.Models.Role;
 using Tp_Programacion.Models.Role.Dto;
 using Tp_Programacion.Repository;
 using Tp_Programacion.Utils;
+using Tp_Programacion.Models.Curso.Dto;
+using Tp_Programacion.Models.Curso;
 
 namespace Tp_Programacion.Services
 {
-    public class CursoSevice
+    public class CursoService
     {
-        public class RoleService
+        private readonly IMapper _mapper;
+        private readonly ICursoRepository _repo;
+        
+
+        public CursoService(IMapper mapper, ICursoRepository repo)
         {
-            private readonly IMapper _mapper;
-            private readonly IRepository<Role> _repo;
+            _mapper = mapper;
+            _repo = repo;
+        }
 
-            public RoleService(IMapper mapper, IRepository<Role> repo)
+        public async Task<List<CursosDTO>> GetAll()
+        {
+            var lista = await _repo.GetAll();
+            var curs = _mapper.Map<List<CursosDTO>>(lista);
+
+            return curs;
+        }
+
+        private async Task<Curso> _GetOneById(int id)
+        {
+            var curso = await _repo.GetOne(c => c.Id == id);
+
+            if (curso == null)
             {
-                _mapper = mapper;
-                _repo = repo;
+                throw new ErrorResponse(
+                    HttpStatusCode.NotFound,
+                    $"Curso con ID = {id} no encontrado"
+                );
             }
+            return curso;
+        }
 
-            public async Task<List<Role>> GetAll() => await _repo.GetAll();
+        public async Task<CursoDTO> GetOneById(int id)
+        {
+            var curs = await _GetOneById(id);
+            var dto = _mapper.Map<CursoDTO>(curs);
+            return dto;
+        }
 
-            public async Task<Role> GetOneById(int id)
-            {
-                var role = await _repo.GetOne(x => x.Id == id);
+        public async Task<Curso> CreateOne(CreateCursoDTO emp)
+        {
+            var e = _mapper.Map<Curso>(emp);
 
-                if (role == null)
-                {
-                    throw new ErrorResponse(
-                        HttpStatusCode.NotFound,
-                        $"Role con ID = {id} no encontrada"
-                    );
-                }
-                return role;
-            }
+          
 
-            public async Task<Role> GetOneByName(string name)
-            {
-                var role = await _repo.GetOne(x => x.Name == name);
+            return await _repo.CreateOne(e);
+        }
 
-                if (role == null)
-                {
-                    throw new ErrorResponse(
-                        HttpStatusCode.NotFound,
-                        $"Role con Name = {name} no encontrado"
-                    );
-                }
-                return role;
-            }
+        public async Task<Curso> UpdateOneById(int id, UpdateCursoDTO updateDto)
+        {
+            var curs = await _GetOneById(id);
 
-            public async Task<Role> CreateOne(RoleDTO rol)
-            {
-                var r = _mapper.Map<Role>(rol);
-                return await _repo.CreateOne(r);
-            }
+           
 
-            public async Task<Role> UpdateOneById(int id, RoleDTO updateDto)
-            {
-                var role = await GetOneById(id);
+            var updated = _mapper.Map(updateDto, curs);
 
-                var updated = _mapper.Map(updateDto, role);
+            return await _repo.UpdateOne(updated);
+        }
 
-                return await _repo.UpdateOne(updated);
-            }
-
-            public async Task DeleteOneById(int id)
-            {
-                var role = await GetOneById(id);
-                await _repo.DeleteOne(role);
-            }
-
-            public async Task<List<Role>> GetManyByIds(List<int> ids)
-            {
-                if (ids.Count == 0 || ids == null)
-                {
-                    throw new ErrorResponse(
-                        HttpStatusCode.BadRequest,
-                        "La lista de RolesIds no puede estar vacia"
-                    );
-                }
-
-                var lista = await _repo.GetAll(x => ids.Contains(x.Id));
-                if (lista.Count == 0)
-                {
-                    throw new ErrorResponse(
-                        HttpStatusCode.BadRequest,
-                        "No coincide ningun Id"
-                    );
-                }
-                return lista;
-            }
+        public async Task DeleteOneById(int id)
+        {
+            var curs = await _GetOneById(id);
+            await _repo.DeleteOne(curs);
         }
     }
 }

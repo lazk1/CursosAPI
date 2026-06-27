@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pktC6z1mcfo=",
+  "dgSpecHash": "Y0s7/RZqt8M=",
   "success": true,
   "projectFilePath": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Tp_Programacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Agustin\\.nuget\\packages\\automapper\\16.1.1\\automapper.16.1.1.nupkg.sha512",
-    "C:\\Users\\Agustin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Agustin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Agustin\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Agustin\\.nuget\\packages\\handlebars.net\\2.1.6\\handlebars.net.2.1.6.nupkg.sha512",
@@ -84,18 +83,5 @@
     "C:\\Users\\Agustin\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Agustin\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "message": "Se detectó una versión del paquete fuera de la restricción de dependencia: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requiere AutoMapper (= 12.0.1), pero la versión AutoMapper 16.1.1 ya se resolvió.",
-      "projectPath": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Tp_Programacion.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\Agustin\\Desktop\\Tp_Programacion\\Tp_Programacion\\Tp_Programacion.csproj",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
