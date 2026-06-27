@@ -11,7 +11,7 @@ namespace Tp_Programacion.Controllers
 
     [Route("api/cursos")]
     [ApiController]
-    [Authorize(Roles = $"{ROLES.Admin}")]
+    //[Authorize(Roles = $"{ROLES.Admin}")]
     [ProducesResponseType(typeof(ResponseMessage), StatusCodes.Status500InternalServerError)]
     public class CursoController : ControllerBase
     {
@@ -77,7 +77,7 @@ namespace Tp_Programacion.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = ROLES.Admin)]
+        //[Authorize(Roles = ROLES.Admin)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(typeof(Curso), StatusCodes.Status200OK)]
@@ -102,7 +102,7 @@ namespace Tp_Programacion.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = ROLES.Admin)]
+        //[Authorize(Roles = ROLES.Admin)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(typeof(ResponseMessage), StatusCodes.Status200OK)]
