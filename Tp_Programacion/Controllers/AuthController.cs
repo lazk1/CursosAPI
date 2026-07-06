@@ -170,5 +170,21 @@ namespace Tp_Programacion.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, msg);
             }
         }
+        [HttpGet("me")]
+        [Authorize]
+        [ProducesResponseType(typeof(UserDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public async Task<ActionResult<UserDTO>> Me()
+        {
+            try
+            {
+                var user = await _authService.GetAuthenticatedUser(HttpContext);
+                return Ok(user);
+            }
+            catch (ErrorResponse ex)
+            {
+                return StatusCode((int)ex.StatusCode, ex.Message);
+            }
+        }
     }
 }

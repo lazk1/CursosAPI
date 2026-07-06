@@ -1,11 +1,8 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Resend;
-using System.Text;
 using Tp_Programacion.Config;
 using Tp_Programacion.Models.Role;
 using Tp_Programacion.Repository;
@@ -28,17 +25,6 @@ builder.Services.AddSwaggerGen(options =>
         Description = "Plataforma de cursos",
         TermsOfService = new Uri("https://www.cursosAPI.com"),
     });
-    options.AddSecurityDefinition("token", new OpenApiSecurityScheme
-    {
-        BearerFormat = "JWT",
-        Description = "Json Web Token, Cabecera de Authorization",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.Http,
-        Name = "Authorization",
-        Scheme = "bearer",
-    });
-
-    options.OperationFilter<AuthOperationFilter>();
 });
 
 
@@ -65,39 +51,29 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("devConnection"));
 });
 
-// jwt
-string secret = builder.Configuration
-    .GetSection("Secrets:jwt")?.Value?.ToString()
-    ?? throw new Exception("invalid jwt secret");
-
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-    .AddJwtBearer(options =>
-    {
-        var key = Encoding.UTF8.GetBytes(secret);
-        options.SaveToken = true;
-        options.TokenValidationParameters =
-            new TokenValidationParameters()
-            {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(key),
-                ValidateIssuer = false,
-                ValidateAudience = false,
-                ValidateLifetime = true
-            };
-    })
+// Autenticacion basada unicamente en cookies
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(opt =>
     {
         opt.Cookie.HttpOnly = true;
         opt.Cookie.SecurePolicy = CookieSecurePolicy.Always;
         opt.Cookie.SameSite = SameSiteMode.None;
-        opt.Cookie.IsEssential = true; // esto es para que, aunque el usuario no acepte las cookies, se setee igual.
+        opt.Cookie.IsEssential = true;
         opt.ExpireTimeSpan = TimeSpan.FromDays(1);
+
+        // Para que la API devuelva códigos de estado en vez de redirigir a páginas web
+        opt.Events.OnRedirectToLogin = ctx =>
+        {
+            ctx.Response.StatusCode = StatusCodes.Status401Unauthorized;
+            return Task.CompletedTask;
+        };
+        opt.Events.OnRedirectToAccessDenied = ctx =>
+        {
+            ctx.Response.StatusCode = StatusCodes.Status403Forbidden;
+            return Task.CompletedTask;
+        };
     });
+
 // Filter
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
@@ -121,6 +97,7 @@ builder.Services.AddResend(o =>
 });
 
 var app = builder.Build();
+
 
 app.UseCors(options =>
 {

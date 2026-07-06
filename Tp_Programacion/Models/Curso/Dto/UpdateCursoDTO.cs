@@ -23,6 +23,9 @@ namespace Tp_Programacion.Models.Curso.Dto
 
         public bool IsActivo { get; set; }
 
+        // El admin puede cambiar si el curso es de pago o gratuito.
+        public bool EsPago { get; set; }
+
         [Required]
         public string MaterialEscrito { get; set; } = null!;
 

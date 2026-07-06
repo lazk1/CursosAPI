@@ -7,6 +7,7 @@
         public string Descripcion { get; set; } = null!;
         public string ImagenPortadaUrl { get; set; } = null!;
         public bool IsActivo { get; set; }
+        public bool EsPago { get; set; }
         public DateTime FechaCreacion { get; set; }
         public string MaterialEscrito { get; set; } = null!;
         public string VideoUrl { get; set; } = null!;

@@ -21,12 +21,20 @@ namespace Tp_Programacion.Services
             _repo = repo;
         }
 
-        public async Task<List<CursosDTO>> GetAll()
+        // accesoTotal = true cuando el usuario es Admin o Premium (ve gratis y pagos).
+        // accesoTotal = false cuando es usuario Free o anónimo (ve solo los gratuitos).
+        public async Task<List<CursosDTO>> GetAll(bool accesoTotal)
         {
             var lista = await _repo.GetAll();
-            var curs = _mapper.Map<List<CursosDTO>>(lista);
 
-            return curs;
+            var cursos = _mapper.Map<List<CursosDTO>>(lista);
+
+            foreach (var curso in cursos)
+            {
+                curso.TieneAcceso = accesoTotal || !curso.EsPago;
+            }
+
+            return cursos;
         }
 
         private async Task<Curso> _GetOneById(int id)
@@ -43,9 +51,18 @@ namespace Tp_Programacion.Services
             return curso;
         }
 
-        public async Task<CursoDTO> GetOneById(int id)
+        public async Task<CursoDTO> GetOneById(int id, bool accesoTotal)
         {
             var curs = await _GetOneById(id);
+
+            if (curs.EsPago && !accesoTotal)
+            {
+                throw new ErrorResponse(
+                    HttpStatusCode.Forbidden,
+                    "Este curso es exclusivo para usuarios Premium"
+                );
+            }
+
             var dto = _mapper.Map<CursoDTO>(curs);
             return dto;
         }

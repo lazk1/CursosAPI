@@ -14,7 +14,7 @@ namespace Tp_Programacion.Repository
             _db = db;
         }
 
-        public new Task<User> GetOne(Expression<Func<User, bool>>? filter = null)
+        public override Task<User> GetOne(Expression<Func<User, bool>>? filter = null)
         {
             IQueryable<User> query = dbSet
                 .Include(u => u.Roles);

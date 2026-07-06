@@ -11,7 +11,6 @@ namespace Tp_Programacion.Controllers
 
     [Route("api/cursos")]
     [ApiController]
-    //[Authorize(Roles = $"{ROLES.Admin}")]
     [ProducesResponseType(typeof(ResponseMessage), StatusCodes.Status500InternalServerError)]
     public class CursoController : ControllerBase
     {
@@ -21,13 +20,20 @@ namespace Tp_Programacion.Controllers
             _cursService = cursService;
         }
 
+        // El Admin y los usuarios Premium tienen acceso total (gratis + pagos).
+        // Los usuarios Free (y anónimos, en GetOneById) solo acceden a los cursos gratuitos.
+        private bool TieneAccesoTotal()
+        {
+            return User.IsInRole(ROLES.Admin) || User.IsInRole(ROLES.Premium);
+        }
+
         [HttpGet]
         [Authorize]
         [ProducesResponseType(typeof(List<CursosDTO>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<List<CursosDTO>>> GetAll()
         {
-            var curs = await _cursService.GetAll();
+            var curs = await _cursService.GetAll(TieneAccesoTotal());
             return Ok(curs);
         }
 
@@ -35,11 +41,12 @@ namespace Tp_Programacion.Controllers
         [AllowAnonymous]
         [ProducesResponseType(typeof(CursoDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ResponseMessage), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ResponseMessage), StatusCodes.Status403Forbidden)]
         public async Task<ActionResult<CursoDTO>> GetOneById(int id)
         {
             try
             {
-                var curs = await _cursService.GetOneById(id);
+                var curs = await _cursService.GetOneById(id, TieneAccesoTotal());
                 return Ok(curs);
             }
             catch (ErrorResponse ex)
@@ -54,6 +61,7 @@ namespace Tp_Programacion.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = ROLES.Admin)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(typeof(Curso), StatusCodes.Status201Created)]
@@ -63,7 +71,7 @@ namespace Tp_Programacion.Controllers
             try
             {
                 var curs = await _cursService.CreateOne(createCurs);
-                return Created("POST api/CURSOS", curs);
+                return Created($"api/cursos/{curs.Id}", curs);
             }
             catch (ErrorResponse ex)
             {
@@ -77,7 +85,7 @@ namespace Tp_Programacion.Controllers
         }
 
         [HttpPut("{id}")]
-        //[Authorize(Roles = ROLES.Admin)]
+        [Authorize(Roles = ROLES.Admin)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(typeof(Curso), StatusCodes.Status200OK)]
@@ -102,7 +110,7 @@ namespace Tp_Programacion.Controllers
         }
 
         [HttpDelete("{id}")]
-        //[Authorize(Roles = ROLES.Admin)]
+        [Authorize(Roles = ROLES.Admin)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(typeof(ResponseMessage), StatusCodes.Status200OK)]

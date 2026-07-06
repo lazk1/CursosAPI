@@ -1,15 +1,13 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using System.Security.Claims;
-using System.Text;
 using Tp_Programacion.Models.Role;
 using Tp_Programacion.Models.User;
 using Tp_Programacion.Models.User.Dto;
 using Tp_Programacion.Utils;
+using Tp_Programacion.Enums;
 
 namespace Tp_Programacion.Services
 {
@@ -21,6 +19,7 @@ namespace Tp_Programacion.Services
         Task<UserDTO> UpdateRolesToUser(int userId, List<int> roleIds);
         Task GeneratePwdTokenToUser(HttpContext context);
         Task VerifyUserPwdToken(int userId, string token);
+        Task<UserDTO> GetAuthenticatedUser(HttpContext context);
     }
 
     public class AuthService : IAuthService
@@ -30,15 +29,11 @@ namespace Tp_Programacion.Services
         private readonly IEncoderService _encoder;
         private readonly EmailService _emailService;
         private readonly IMapper _mapper;
-        private readonly string _secret;
 
         public AuthService(UserService userService, IMapper mapper, IConfiguration config, RoleService roleService, IEncoderService encoder, EmailService emailService)
         {
             _userService = userService;
             _mapper = mapper;
-            _secret = config
-                .GetSection("Secrets:jwt")?.Value?.ToString()
-                ?? throw new Exception("invalid jwt secret");
             _roleService = roleService;
             _encoder = encoder;
             _emailService = emailService;
@@ -85,7 +80,6 @@ namespace Tp_Programacion.Services
 
             var loginReponse = new LoginResponseDTO()
             {
-                Token = GenerateJwtToken(user),
                 User = _mapper.Map<UserDTO>(user)
             };
             return loginReponse;
@@ -96,7 +90,7 @@ namespace Tp_Programacion.Services
             var user = context.User.Claims.FirstOrDefault(claim => claim.Type == "id");
             int id;
             bool ok = int.TryParse(user?.Value, out id);
-            if (!ok) throw new ErrorResponse(HttpStatusCode.BadRequest, "invalid jwt token");
+            if (!ok) throw new ErrorResponse(HttpStatusCode.BadRequest, "invalid session");
             return id;
         }
 
@@ -155,52 +149,20 @@ namespace Tp_Programacion.Services
             user.Password = _encoder.Encrypt(user.Password);
 
             // Asignación del rol por defecto
-            var role = await _roleService.GetOneByName("User");
+            var role = await _roleService.GetOneByName(ROLES.Free);
             user.Roles.Add(role);
 
             var created = await _userService.CreateOne(user);
             return _mapper.Map<UserDTO>(created);
         }
 
-        public string GenerateJwtToken(User user)
-        {
-            var claims = new ClaimsIdentity();
-            var idClaim = new Claim("id", user.Id.ToString());
-            claims.AddClaim(idClaim);
-
-            if (user.Roles != null)
-            {
-                foreach (var role in user.Roles)
-                {
-                    var roleClaim = new Claim(ClaimTypes.Role, role.Name);
-                    claims.AddClaim(roleClaim);
-                }
-            }
-
-            var key = Encoding.UTF8.GetBytes(_secret);
-            var symmetricKey = new SymmetricSecurityKey(key);
-
-            var credentials = new SigningCredentials(
-                symmetricKey,
-                SecurityAlgorithms.HmacSha256Signature
-            );
-            var tokenDescriptor = new SecurityTokenDescriptor()
-            {
-                Subject = claims,
-                Expires = DateTime.UtcNow.AddMinutes(1),
-                SigningCredentials = credentials
-            };
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var tokenConfig = tokenHandler.CreateToken(tokenDescriptor);
-            string token = tokenHandler.WriteToken(tokenConfig);
-
-            return token;
-        }
-
         public async Task<UserDTO> UpdateRolesToUser(int userId, List<int> roleIds)
         {
-            User user = await _userService.GetOneById(userId);
+            User? user = await _userService.GetOneById(userId);
+            if (user == null)
+            {
+                throw new ErrorResponse(HttpStatusCode.NotFound, "Usuario no encontrado");
+            }
 
             List<Role> roles = await _roleService.GetManyByIds(roleIds);
 
@@ -211,6 +173,17 @@ namespace Tp_Programacion.Services
             UserDTO mapped = _mapper.Map<UserDTO>(updatedUser);
 
             return mapped;
+        }
+
+        public async Task<UserDTO> GetAuthenticatedUser(HttpContext context)
+        {
+            int userId = GetUserIdFromContext(context);
+            var user = await _userService.GetOneById(userId);
+            if (user == null)
+            {
+                throw new ErrorResponse(HttpStatusCode.NotFound, "Usuario no encontrado");
+            }
+            return _mapper.Map<UserDTO>(user);
         }
     }
 }

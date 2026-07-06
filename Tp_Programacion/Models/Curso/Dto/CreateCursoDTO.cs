@@ -30,5 +30,8 @@ namespace Tp_Programacion.Models.Curso.Dto
         [Required]
         [Range(1, 100)]
         public int PorcentajeAprobacion { get; set; } = 70;
+
+        // El admin define si el curso es de pago (true) o gratuito (false, por defecto).
+        public bool EsPago { get; set; } = false;
     }
 }

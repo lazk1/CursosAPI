@@ -54,7 +54,7 @@ namespace Tp_Programacion.Repository
                 return await query.ToListAsync();
             }
 
-            public async Task<T> GetOne(Expression<Func<T, bool>>? filter = null)
+            public virtual async Task<T> GetOne(Expression<Func<T, bool>>? filter = null)
             {
                 IQueryable<T> query = dbSet;
                 if (filter != null)
