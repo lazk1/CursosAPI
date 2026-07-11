@@ -1,11 +1,11 @@
 # devCursos — Frontend
 
-Frontend en React + Vite + TypeScript para el TP de Programación 4 (UTN San
+Frontend en React + Vite para el TP de Programación 4 (UTN San
 Nicolás), consumiendo el back [CursosAPI](https://github.com/lazk1/CursosAPI).
 
 ## Stack
 
-- **React 18** + **Vite** + **TypeScript**
+- **React 18** + **Vite** 
 - **wouter** — ruteo (`/`, `/login`, `/cursos`, `/cursos/:id`, `/admin`)
 - **axios** — cliente HTTP (`withCredentials: true`, ver nota de Auth)
 - **zustand** — estado global de sesión (`src/store/authStore.ts`)
